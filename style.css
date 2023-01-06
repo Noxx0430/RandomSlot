@@ -1,0 +1,102 @@
+/*==============================
+  Global Selecter Element
+==============================*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Arial";
+  user-select: none;
+}
+
+label{
+  cursor: pointer;
+}
+
+
+
+/*==============================
+  Class Selecter Element
+==============================*/
+
+.item_area{
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 110px);
+  height: calc(50% - 110px);
+  padding: 5px;
+  border: solid 1px #555;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.item_area::-webkit-scrollbar{
+  width: 2px;
+  height: 2px;
+}
+
+.item_area::-webkit-scrollbar-thumb{
+  background: #fff;
+}
+
+.item_area label input{
+  margin: 0 3px 0 0;
+}
+
+.exe_button{
+  position: fixed;
+  top: calc(50% - 30px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 25px;
+  background: #77f;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.slot_num{
+  position: fixed;
+  top: calc(50%);
+  left: 50%;
+  transform: translateX(-50%);
+  outline: none;
+}
+
+.result{
+  position: fixed;
+  top: calc(50% + 50px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  aspect-ratio: 7 / 2;
+  line-height: 0;
+}
+
+.result div{
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  height: 50%;
+  border: solid 1px #555;
+  box-sizing: border-box;
+}
+
+.result div span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 10px);
+  line-height: 15px;
+  text-align: center;
+}
